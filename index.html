@@ -94,24 +94,24 @@
         </div>
         <nav class="p-header__nav">
           <ul class="p-header__nav-list">
-            <li class="p-header__nav-item"><a href="#p-news">新着情報</a></li>
+            <li class="p-header__nav-item"><a href="#news">新着情報</a></li>
             <li class="p-header__nav-item">
-              <a href="#p-treatment">診察内容</a>
+              <a href="#treatment">診察内容</a>
             </li>
-            <li class="p-header__nav-item"><a href="#p-flow">治療の流れ</a></li>
+            <li class="p-header__nav-item"><a href="#flow">治療の流れ</a></li>
             <li
               class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover"
             >
               <a href="/about.html">当院について</a>
               <ul class="p-header__sub-list">
                 <li class="p-header__sub-item">
-                  <a href="./about.html#p-about">院長挨拶</a>
+                  <a href="/about.html#about">院長挨拶</a>
                 </li>
                 <li class="p-header__sub-item">
-                  <a href="./about.html#p-facility">設備紹介</a>
+                  <a href="/about.html#facility">設備紹介</a>
                 </li>
                 <li class="p-header__sub-item">
-                  <a href="./about.html#p-company">会社概要</a>
+                  <a href="/about.html#company">会社概要</a>
                 </li>
               </ul>
             </li>
@@ -150,31 +150,33 @@
       <div class="c-bg-mask1 c-bg-mask__head"></div>
 
       <!-- メインビュー--------------------------------- -->
-      <div class="p-main-catch__image animate__animated js-fadein-right">
-        <picture>
-          <source
-            srcset="./images/main-view-pc.jpg"
-            media="(min-width: 768px)"
-          />
-          <img src="./images/main-view-sp.jpg" alt="歯科医" />
-        </picture>
-      </div>
-      <div class="p-wrapper">
-        <div class="p-main-catch__container animate__animated js-fadein-left">
-          <p class="p-main-catch__top">Make your life quality</p>
-          <div class="p-main-catch__box">
-            <p class="p-main-catch__text">口腔環境からはじめる</p>
-            <p class="p-main-catch__text">ライフクオリティの向上</p>
-            <p class="p-main-catch__text-sub">
-              自然な笑顔を引き出す口腔のケアを実現します
-            </p>
+      <div class="p-main-catch">
+        <div class="p-main-catch__image animate__animated js-fadein-right">
+          <picture>
+            <source
+              srcset="./images/main-view-pc.jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/main-view-sp.jpg" alt="歯科医" />
+          </picture>
+        </div>
+        <div class="p-main-catch__wrapper">
+          <div class="p-main-catch__container animate__animated js-fadein-left">
+            <p class="p-main-catch__top">Make your life quality</p>
+            <div class="p-main-catch__box">
+              <p class="p-main-catch__text">口腔環境からはじめる</p>
+              <p class="p-main-catch__text">ライフクオリティの向上</p>
+              <p class="p-main-catch__text-sub">
+                自然な笑顔を引き出す口腔のケアを実現します
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- 新着情報--------------------------------- -->
-      <section id="p-news" class="p-news">
-        <div class="p-wrapper">
+      <section id="news" class="p-news l-news">
+        <div class="p-news__wrapper">
           <div class="p-news__box">
             <div class="p-news__section-box">
               <h2 class="c-section-title animate__animated js-fadein-up">
@@ -196,7 +198,7 @@
                 <div class="p-news__body">
                   <p class="p-news__body-title">タイトル</p>
                   <p class="p-news__body-text">
-                    テキストテキストテキストテキスト…
+                    <a href="#"> テキストテキストテキストテキスト…</a>
                   </p>
                 </div>
               </div>
@@ -209,7 +211,7 @@
                 <div class="p-news__body">
                   <p class="p-news__body-title">タイトル</p>
                   <p class="p-news__body-text">
-                    テキストテキストテキストテキスト…
+                    <a href="#"> テキストテキストテキストテキスト…</a>
                   </p>
                 </div>
               </div>
@@ -222,7 +224,7 @@
                 <div class="p-news__body">
                   <p class="p-news__body-title">タイトル</p>
                   <p class="p-news__body-text">
-                    テキストテキストテキストテキスト…
+                    <a href="#"> テキストテキストテキストテキスト…</a>
                   </p>
                 </div>
               </div>
@@ -239,8 +241,8 @@
       </section>
 
       <!-- top 私たちについて--------------------------------- -->
-      <section class="p-about-top">
-        <div class="p-wrapper">
+      <section class="p-about-top l-about-top">
+        <div class="p-about-top__wrapper">
           <div class="p-about-top__box">
             <div
               class="p-about-top__image-box animate__animated js-fadein-left"
@@ -272,7 +274,7 @@
                 当院は、地域に密着した総合病院です。豊富な診療科目と高い専門性を持つ医師・スタッフが、患者さん一人ひとりに最適な医療を提供します。信頼のおける医療を追求し、安心して治療に臨んでいただける環境を整えています。最新の医療機器や設備を導入し、確かな診断と効果的な治療を実現します。また、患者さんのニーズに合わせたオーダーメイドのケアプランを立案し、続けていくためのサポートも充実しています。当院で皆さまの健康な暮らしをサポートいたします。
               </p>
               <div class="p-about-top__more">
-                <a class="c-button" href="./about.html"
+                <a class="c-button" href="/about.html"
                   ><span class="c-button__inner">当院について</span></a
                 >
               </div>
@@ -284,11 +286,11 @@
       </section>
 
       <!-- カード (トリートメント)-------------------------------------- -->
-      <section id="p-treatment" class="p-treatment">
+      <section id="treatment" class="p-treatment l-treatment">
         <div class="c-bg-treatment"></div>
         <div class="c-bg-mask2 c-bg-mask__treatment"></div>
 
-        <div class="p-wrapper">
+        <div class="p-treatment__wrapper">
           <h2
             class="c-section-title p-treatment__title animate__animated js-fadein-up"
           >
@@ -396,8 +398,8 @@
       </section>
 
       <!-- 治療の流れ-------------------------------------- -->
-      <section id="p-flow" class="p-flow">
-        <div class="p-wrapper">
+      <section id="flow" class="p-flow l-flow">
+        <div class="p-flow__wrapper">
           <div class="p-flow__container">
             <div class="p-flow__title-box">
               <h2
@@ -457,10 +459,10 @@
       </section>
 
       <!-- メッセージ-------------------------------------- -->
-      <section class="p-message">
+      <section class="p-message l-message">
         <div class="c-bg-message"></div>
         <div class="c-bg-mask2 c-bg-mask__message"></div>
-        <div class="p-wrapper">
+        <div class="p-message__wrapper">
           <div class="p-message__container">
             <h2
               class="c-section-title p-message__title-sp animate__animated js-fadein-up"
@@ -501,8 +503,8 @@
       </section>
 
       <!-- カード (ポイント)-------------------------------------- -->
-      <section class="p-point">
-        <div class="p-wrapper">
+      <section class="p-point l-point">
+        <div class="p-point__wrapper">
           <div class="c-card p-point__card p-point__card-reverse">
             <div class="c-card__image p-point__card-image">
               <picture>
@@ -586,7 +588,7 @@
         </div>
       </section>
       <!-- スワイパー -------------------------------------------------->
-      <section class="p-interior">
+      <section class="p-interior l-interior">
         <h2
           class="c-section-title p-interior__title animate__animated js-fadein-up"
         >
@@ -648,11 +650,11 @@
         </div>
       </section>
       <!-- アクセス-------------------------------------- -->
-      <section class="p-access">
+      <section class="p-access l-access">
         <div class="c-bg-bottom"></div>
         <div class="c-bg-mask1 c-bg-mask__bottom"></div>
 
-        <div class="p-wrapper">
+        <div class="p-access__wrapper">
           <h2
             class="c-section-title p-access__title animate__animated js-fadein-up"
           >
@@ -674,7 +676,7 @@
           ></iframe>
           <div class="p-access__box">
             <div class="p-access__information-box">
-              <p class="p-access__name">ASSIST DENTAL CLINIC</p>
+              <p class="p-access__logo">ASSIST DENTAL CLINIC</p>
               <p class="p-access__tel">
                 TEL.<span class="p-access__tel-number">03-0000-0000</span>
               </p>
@@ -728,7 +730,7 @@
             </div>
           </div>
           <div class="p-access__button">
-            <a class="c-button c-button--purple" href="./reservation.html"
+            <a class="c-button c-button--purple" href="/reservation.html"
               ><span class="c-button__inner">WEB予約はこちら</span></a
             >
           </div>
@@ -737,30 +739,30 @@
     </main>
 
     <!-- フッター-------------------------------------------------------------- -->
-    <footer class="p-footer">
-      <div class="p-wrapper">
+    <footer class="p-footer l-footer">
+      <div class="p-footer__wrapper">
         <div class="p-footer__head">
           <p class="p-footer__logo">ASSIST DENTAL CLINIC</p>
           <nav class="p-footer__nav">
             <ul class="p-footer__nav-list">
-              <li class="p-footer__nav-item"><a href="#p-news">新着情報</a></li>
+              <li class="p-footer__nav-item"><a href="#news">新着情報</a></li>
               <li class="p-footer__nav-item">
-                <a href="#p-treatment">診察内容</a>
+                <a href="#treatment">診察内容</a>
               </li>
               <li class="p-footer__nav-item">
-                <a href="#p-flow">治療の流れ</a>
+                <a href="#flow">治療の流れ</a>
               </li>
               <li class="p-footer__nav-item p-footer__nav-no-border">
                 <a href="/about.html">当院について</a>
                 <ul class="p-footer__sub-list">
                   <li class="p-footer__sub-item">
-                    <a href="/about.html#p-about">院長挨拶</a>
+                    <a href="/about.html#about">院長挨拶</a>
                   </li>
                   <li class="p-footer__sub-item">
-                    <a href="/about.html#p-facility">設備紹介</a>
+                    <a href="/about.html#facility">設備紹介</a>
                   </li>
                   <li class="p-footer__sub-item">
-                    <a href="/about.html#p-company">会社概要</a>
+                    <a href="/about.html#company">会社概要</a>
                   </li>
                 </ul>
               </li>
