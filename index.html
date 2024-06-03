@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>ASSIST DENTAL CLINIC</title>
+    <meta
+      name="description"
+      content="ASSIST DENTAL CLINIC/口腔環境からはじめるライフクオリティの向上"
+    />
+    <meta name="keywords" content="歯医者,口腔の悩み,ライフクオリティの向上" />
+    <!-- noindex -->
+    <meta name="ots" content="noindex" />
+    <!-- nofollow -->
+    <meta name="robots" content="nofollow" />
+    <!-- ogp -->
+    <meta property="og:title" content="ASSIST DENTAL CLINIC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xs589126.xsrv.jp/" />
+    <meta
+      property="og:image"
+      content="https://xs589126.xsrv.jp/images/doctor.jpg"
+    />
+    <meta property="og:site_name" content="ASSIST DENTAL CLINIC" />
+    <meta
+      property="og:description"
+      content="ASSIST DENTAL CLINIC/口腔環境からはじめるライフクオリティの向上"
+    />
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Script&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header class="p-header">
+      <h1 class="p-header__logo"><a href="#">ASSIST DENTAL CLINIC</a></h1>
+      <button class="c-hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__information-box js-drawer">
+        <div class="p-header__information">
+          <div class="p-header__reservation">
+            <a href="/reservation.html">
+              <div class="p-header__reservation-inner">
+                <div class="p-header__reservation-image u-mobile">
+                  <img src="./images/reservation.png" alt="カレンダーの画像" />
+                </div>
+                <p class="p-header__reservation-text">Web予約</p>
+              </div></a
+            >
+          </div>
+          <div class="p-header__tel">
+            <a href="tel:03-0000-0000">
+              <div>
+                <div class="p-header__tel-image">
+                  <img src="./images/tel.png" alt="電話のアイコン" />
+                </div>
+                <div class="p-header__tel-text">
+                  <p class="p-header__tel-small-text">TEL.</p>
+                  <p class="p-header__tel-number">03-0000-0000</p>
+                </div>
+              </div>
+            </a>
+            <p class="p-header__opening-time">営業時間 10:00〜19:00</p>
+            <p class="p-header__comment">お気軽にお問い合わせください</p>
+          </div>
+        </div>
+        <nav class="p-header__nav">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item"><a href="#p-news">新着情報</a></li>
+            <li class="p-header__nav-item">
+              <a href="#p-treatment">診察内容</a>
+            </li>
+            <li class="p-header__nav-item"><a href="#p-flow">治療の流れ</a></li>
+            <li
+              class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover"
+            >
+              <a href="/about.html">当院について</a>
+              <ul class="p-header__sub-list">
+                <li class="p-header__sub-item">
+                  <a href="./about.html#p-about">院長挨拶</a>
+                </li>
+                <li class="p-header__sub-item">
+                  <a href="./about.html#p-facility">設備紹介</a>
+                </li>
+                <li class="p-header__sub-item">
+                  <a href="./about.html#p-company">会社概要</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="l-main">
+      <!-- フロートインフォメーション---------------------------------------------------- -->
+      <div class="p-float">
+        <div class="p-float__tel">
+          <a href="tel:03-0000-0000">
+            <div class="p-float__tel-inner">
+              <div class="p-float__tel-image">
+                <img src="./images/tel.png" alt="電話のアイコン" />
+              </div>
+              <div class="p-float__tel-text">
+                <p class="p-float__tel-number">03-0000-0000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="p-float__reservation">
+          <a href="/reservation.html">
+            <div class="p-float__reservation-inner">
+              <div class="p-float__reservation-image">
+                <img src="./images/reservation.png" alt="カレンダーの画像" />
+              </div>
+              <p class="p-float__reservation-text">Web予約</p>
+            </div></a
+          >
+        </div>
+      </div>
+      <!-- ページtop背景--------------------------------- -->
+      <div class="c-bg-head"></div>
+      <div class="c-bg-mask1 c-bg-mask__head"></div>
+
+      <!-- メインビュー--------------------------------- -->
+      <div class="p-main-catch__image animate__animated js-fadein-right">
+        <picture>
+          <source
+            srcset="./images/main-view-pc.jpg"
+            media="(min-width: 768px)"
+          />
+          <img src="./images/main-view-sp.jpg" alt="歯科医" />
+        </picture>
+      </div>
+      <div class="p-wrapper">
+        <div class="p-main-catch__container animate__animated js-fadein-left">
+          <p class="p-main-catch__top">Make your life quality</p>
+          <div class="p-main-catch__box">
+            <p class="p-main-catch__text">口腔環境からはじめる</p>
+            <p class="p-main-catch__text">ライフクオリティの向上</p>
+            <p class="p-main-catch__text-sub">
+              自然な笑顔を引き出す口腔のケアを実現します
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 新着情報--------------------------------- -->
+      <section id="p-news" class="p-news">
+        <div class="p-wrapper">
+          <div class="p-news__box">
+            <div class="p-news__section-box">
+              <h2 class="c-section-title animate__animated js-fadein-up">
+                新着情報
+              </h2>
+              <p
+                class="c-section-subtitle p-news__sub-title animate__animated js-fadein-up"
+              >
+                News
+              </p>
+            </div>
+            <div class="p-news__items">
+              <div class="p-news__item">
+                <div class="p-news__head">
+                  <time class="p-news__date" datetime="2024-04-27"
+                    >2024.04.27</time
+                  >
+                </div>
+                <div class="p-news__body">
+                  <p class="p-news__body-title">タイトル</p>
+                  <p class="p-news__body-text">
+                    テキストテキストテキストテキスト…
+                  </p>
+                </div>
+              </div>
+              <div class="p-news__item">
+                <div class="p-news__head">
+                  <time class="p-news__date" datetime="2024-04-27"
+                    >2024.04.27</time
+                  >
+                </div>
+                <div class="p-news__body">
+                  <p class="p-news__body-title">タイトル</p>
+                  <p class="p-news__body-text">
+                    テキストテキストテキストテキスト…
+                  </p>
+                </div>
+              </div>
+              <div class="p-news__item">
+                <div class="p-news__head">
+                  <time class="p-news__date" datetime="2024-04-27"
+                    >2024.04.27</time
+                  >
+                </div>
+                <div class="p-news__body">
+                  <p class="p-news__body-title">タイトル</p>
+                  <p class="p-news__body-text">
+                    テキストテキストテキストテキスト…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-news__more">
+            <a class="c-button-more c-button-more--purple" href="#"
+              >もっと見る<span
+                class="c-button-more__inner c-button-more__inner--purple"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- top 私たちについて--------------------------------- -->
+      <section class="p-about-top">
+        <div class="p-wrapper">
+          <div class="p-about-top__box">
+            <div
+              class="p-about-top__image-box animate__animated js-fadein-left"
+            >
+              <div class="p-about-top__image1">
+                <img
+                  src="./images/about1.jpg"
+                  alt="女の子が口を開けている写真"
+                />
+              </div>
+              <div
+                class="p-about-top__image2 animate__animated js-fadein-right"
+              >
+                <img src="./images/about2.jpg" alt="歯医者の椅子" />
+              </div>
+            </div>
+            <div class="p-about-top__text-box">
+              <h2
+                class="c-section-title p-about-top__title animate__animated js-fadein-up"
+              >
+                わたしたちについて
+              </h2>
+              <p
+                class="c-section-subtitle p-about-top__sub-title animate__animated js-fadein-up"
+              >
+                About us
+              </p>
+              <p class="p-about-top__text">
+                当院は、地域に密着した総合病院です。豊富な診療科目と高い専門性を持つ医師・スタッフが、患者さん一人ひとりに最適な医療を提供します。信頼のおける医療を追求し、安心して治療に臨んでいただける環境を整えています。最新の医療機器や設備を導入し、確かな診断と効果的な治療を実現します。また、患者さんのニーズに合わせたオーダーメイドのケアプランを立案し、続けていくためのサポートも充実しています。当院で皆さまの健康な暮らしをサポートいたします。
+              </p>
+              <div class="p-about-top__more">
+                <a class="c-button" href="./about.html"
+                  ><span class="c-button__inner">当院について</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-bg-about"></div>
+        <div class="c-bg-mask2 c-bg-mask__about-top"></div>
+      </section>
+
+      <!-- カード (トリートメント)-------------------------------------- -->
+      <section id="p-treatment" class="p-treatment">
+        <div class="c-bg-treatment"></div>
+        <div class="c-bg-mask2 c-bg-mask__treatment"></div>
+
+        <div class="p-wrapper">
+          <h2
+            class="c-section-title p-treatment__title animate__animated js-fadein-up"
+          >
+            診療内容
+          </h2>
+          <p
+            class="c-section-subtitle p-treatment__sub-title animate__animated js-fadein-up"
+          >
+            Treatment details
+          </p>
+          <div class="p-treatment__cards">
+            <div class="c-card p-treatment__card">
+              <div class="c-card__image p-treatment__card-image">
+                <picture>
+                  <source
+                    srcset="./images/treatment-pc1.jpg"
+                    media="(min-width: 768px)" />
+                  <img src="./images/treatment-sp1.jpg" alt="歯科用品"
+                /></picture>
+              </div>
+              <div class="c-card__body p-treatment__card-body">
+                <h3 class="c-card__title p-treatment__card-title">
+                  虫歯治療・予防歯科
+                </h3>
+                <p class="c-card__text p-treatment__card-text">
+                  ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+                </p>
+              </div>
+              <a class="c-button-more p-treatment__button" href="#"
+                >もっと見る<span class="c-button-more__inner"></span
+              ></a>
+            </div>
+            <div class="c-card p-treatment__card">
+              <div class="c-card__image p-treatment__card-image">
+                <picture>
+                  <source
+                    srcset="./images/treatment-pc2.jpg"
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./images/treatment-sp2.jpg"
+                    alt="女性のアップの写真"
+                /></picture>
+              </div>
+              <div class="c-card__body p-treatment__card-body">
+                <h3 class="c-card__title p-treatment__card-title">歯科矯正</h3>
+                <p class="c-card__text p-treatment__card-text">
+                  ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+                </p>
+              </div>
+              <a class="c-button-more p-treatment__button" href="#"
+                >もっと見る<span class="c-button-more__inner"></span
+              ></a>
+            </div>
+            <div class="c-card p-treatment__card">
+              <div class="c-card__image p-treatment__card-image">
+                <picture>
+                  <source
+                    srcset="./images/treatment-pc3.jpg"
+                    media="(min-width: 768px)" />
+                  <img src="./images/treatment-sp3.jpg" alt="歯の模型"
+                /></picture>
+              </div>
+              <div class="c-card__body p-treatment__card-body">
+                <h3 class="c-card__title p-treatment__card-title">
+                  インプラント
+                </h3>
+                <p class="c-card__text p-treatment__card-text">
+                  ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+                </p>
+              </div>
+              <a class="c-button-more p-treatment__button" href="#"
+                >もっと見る<span class="c-button-more__inner"></span
+              ></a>
+            </div>
+            <div class="c-card p-treatment__card">
+              <div class="c-card__image p-treatment__card-image">
+                <picture>
+                  <source
+                    srcset="./images/treatment-pc4.jpg"
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./images/treatment-sp4.jpg"
+                    alt="歯のホワイトニングの写真"
+                /></picture>
+              </div>
+              <div class="c-card__body p-treatment__card-body">
+                <h3 class="c-card__title p-treatment__card-title">
+                  ホワイトニング
+                </h3>
+                <p class="c-card__text p-treatment__card-text">
+                  ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
+                </p>
+              </div>
+              <a class="c-button-more p-treatment__button" href="#"
+                >もっと見る<span class="c-button-more__inner"></span
+              ></a>
+            </div>
+          </div>
+          <div class="p-treatment__button-box">
+            <a class="c-button c-button--blue" href="#"
+              ><span class="c-button__inner">料金はこちら</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 治療の流れ-------------------------------------- -->
+      <section id="p-flow" class="p-flow">
+        <div class="p-wrapper">
+          <div class="p-flow__container">
+            <div class="p-flow__title-box">
+              <h2
+                class="c-section-title p-flow__title animate__animated js-fadein-up"
+              >
+                治療の流れ
+              </h2>
+              <p
+                class="c-section-subtitle p-flow__sub-title animate__animated js-fadein-up"
+              >
+                Flow
+              </p>
+            </div>
+            <ul class="p-flow__list">
+              <li class="p-flow__item">
+                <div class="p-flow__number">01</div>
+                <div class="p-flow__image1">
+                  <img src="./images/flow1.png" alt="カレンダーの画像" />
+                </div>
+                <p class="p-flow__text p-flow__text1">
+                  電話または<br />Web予約
+                </p>
+              </li>
+              <li class="p-flow__arrow-box">
+                <div class="p-flow__arrow"></div>
+              </li>
+              <li class="p-flow__item p-flow__item2">
+                <div class="p-flow__number">02</div>
+                <div class="p-flow__image2">
+                  <img src="./images/flow2.png" alt="病院のアイコン" />
+                </div>
+                <p class="p-flow__text p-flow__text2">来院</p>
+              </li>
+              <li class="p-flow__arrow-box p-flow__arrow-box2">
+                <div class="p-flow__arrow"></div>
+              </li>
+              <li class="p-flow__item p-flow__item3">
+                <div class="p-flow__number">03</div>
+                <div class="p-flow__image3">
+                  <img src="./images/flow3.png" alt="カルテのアイコン" />
+                </div>
+                <p class="p-flow__text p-flow__text3">問診</p>
+              </li>
+              <li class="p-flow__arrow-box p-flow__arrow-box3">
+                <div class="p-flow__arrow"></div>
+              </li>
+              <li class="p-flow__item">
+                <div class="p-flow__number">04</div>
+                <div class="p-flow__image4">
+                  <img src="./images/flow4.png" alt="聴診器のアイコン" />
+                </div>
+                <p class="p-flow__text p-flow__text4">レントゲン<br />・治療</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- メッセージ-------------------------------------- -->
+      <section class="p-message">
+        <div class="c-bg-message"></div>
+        <div class="c-bg-mask2 c-bg-mask__message"></div>
+        <div class="p-wrapper">
+          <div class="p-message__container">
+            <h2
+              class="c-section-title p-message__title-sp animate__animated js-fadein-up"
+            >
+              院長ご挨拶
+            </h2>
+            <p
+              class="c-section-subtitle p-message__sub-title-sp animate__animated js-fadein-up"
+            >
+              Message
+            </p>
+            <div class="p-message__image animate__animated js-fadein-left">
+              <picture>
+                <source
+                  srcset="./images/message-pc.jpg"
+                  media="(min-width: 768px)" />
+                <img src="./images/message-sp.jpg" alt="歯科医と患者の女性"
+              /></picture>
+            </div>
+            <div class="p-message__box">
+              <h2
+                class="c-section-title p-message__title-pc animate__animated js-fadein-up"
+              >
+                院長ご挨拶
+              </h2>
+              <p
+                class="c-section-subtitle p-message__sub-title-pc animate__animated js-fadein-up"
+              >
+                Message
+              </p>
+              <p class="p-message__catch">Enjoy life!</p>
+              <p class="p-message__text">
+                皆さまへ、院長の川上です。私たちの病院は、常に最高の医療と温かいサポートを提供することを使命としています。患者さまの健康と快適な生活をサポートするため、全力で取り組んでいます。信頼と安心をお届けする病院を目指し、スタッフ一同、心からのおもてなしを心掛けています。いつでも皆さまの健康をお守りするために、お待ちしております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- カード (ポイント)-------------------------------------- -->
+      <section class="p-point">
+        <div class="p-wrapper">
+          <div class="c-card p-point__card p-point__card-reverse">
+            <div class="c-card__image p-point__card-image">
+              <picture>
+                <source
+                  srcset="./images/point-pc1.jpg"
+                  media="(min-width: 768px)" />
+                <img src="./images/point-sp1.jpg" alt="歯科医の診察の様子"
+              /></picture>
+            </div>
+            <div class="c-card__body p-point__card-body">
+              <div
+                class="c-card__head p-point__card-head animate__animated js-fadein-up"
+              >
+                <p class="c-card__sub-title p-point__card-sub-title">
+                  Point 01
+                </p>
+                <h3 class="c-card__title p-point__card-title">
+                  <span class="p-point__card-title--heading">最</span
+                  >高の医療と温かいサポートを
+                </h3>
+              </div>
+              <p class="c-card__text p-point__card-text">
+                当院では幅広い診療サービスを提供しており、地域住民の様々なニーズに対応しています。一般的な歯科治療だけでなく、予防歯科や審美歯科、小児歯科など、患者さんの個々の状況に合わせた治療を提供しています。地域の方々にとって必要なケアを一貫して提供し、歯の健康をサポートしています。
+              </p>
+            </div>
+          </div>
+          <div class="c-card p-point__card">
+            <div class="c-card__image p-point__card-image">
+              <picture>
+                <source
+                  srcset="./images/point-pc2.jpg"
+                  media="(min-width: 768px)" />
+                <img
+                  src="./images/point-sp2.jpg"
+                  alt="幼児が口を医者に見せている写真"
+              /></picture>
+            </div>
+            <div class="c-card__body p-point__card-body">
+              <div
+                class="c-card__head p-point__card-head animate__animated js-fadein-up"
+              >
+                <p class="c-card__sub-title p-point__card-sub-title">
+                  Point 02
+                </p>
+                <h3 class="c-card__title p-point__card-title">
+                  <span class="p-point__card-title--heading">地</span
+                  >域の人々との信頼関係の構築
+                </h3>
+              </div>
+              <p class="c-card__text p-point__card-text">
+                患者さんとの信頼関係を大切にしています。患者さん一人ひとりの状態や希望に真摯に向き合い、丁寧なカウンセリングや説明を行っています。また、地域の人々とのコミュニティ活動やイベントへの参加なども積極的に行い、地域の中で愛される存在となっています。
+              </p>
+            </div>
+          </div>
+          <div class="c-card p-point__card p-point__card-reverse">
+            <div class="c-card__image p-point__card-image">
+              <picture>
+                <source
+                  srcset="./images/point-pc3.jpg"
+                  media="(min-width: 768px)" />
+                <img src="./images/point-sp3.jpg" alt="歯医者の椅子"
+              /></picture>
+            </div>
+            <div class="c-card__body p-point__card-body">
+              <div
+                class="c-card__head p-point__card-head animate__animated js-fadein-up"
+              >
+                <p class="c-card__sub-title p-point__card-sub-title">
+                  Point 03
+                </p>
+                <h3 class="c-card__title p-point__card-title">
+                  <span class="p-point__card-title--heading">快</span
+                  >適な環境と最新の技術の導入
+                </h3>
+              </div>
+              <p class="c-card__text p-point__card-text">
+                患者さんが心地よく通える診療環境を提供しています。待合室や診療室は清潔でリラックスできる空間となっており、患者さんのストレスを最小限に抑える工夫をしています。また、最新の歯科技術や設備の導入にも力を入れており、より効果的な治療を提供するための取り組みを行っています。地域の人々が安心して通える場所となっています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- スワイパー -------------------------------------------------->
+      <section class="p-interior">
+        <h2
+          class="c-section-title p-interior__title animate__animated js-fadein-up"
+        >
+          院内風景
+        </h2>
+        <p
+          class="c-section-subtitle p-interior__sub-title animate__animated js-fadein-up"
+        >
+          Dental clinic interior
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide p-swiper__slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior1.jpg" alt="歯の模型" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior2.jpg" alt="歯科医の診察の様子" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior3.jpg" alt="歯医者の受付" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior4.jpg" alt="歯科医と患者の女性" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior5.jpg" alt="女性のアップの写真" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img src="./images/interior6.jpg" alt="歯医者の椅子" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__image">
+                <img
+                  src="./images/interior7.jpg"
+                  alt="幼児が口を医者に見せている写真"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- アクセス-------------------------------------- -->
+      <section class="p-access">
+        <div class="c-bg-bottom"></div>
+        <div class="c-bg-mask1 c-bg-mask__bottom"></div>
+
+        <div class="p-wrapper">
+          <h2
+            class="c-section-title p-access__title animate__animated js-fadein-up"
+          >
+            アクセス
+          </h2>
+          <p
+            class="c-section-subtitle p-access__sub-title animate__animated js-fadein-up"
+          >
+            Access
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.498339496027!2d139.70785591780162!3d35.667777561462465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9deb4e46b9%3A0x9d1be9b7bffd0ba!2z5p2x5Lqs6YO95riv5Yy6IOmdkuWxsQ!5e0!3m2!1sja!2sjp!4v1717190223356!5m2!1sja!2sjp"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="p-access__box">
+            <div class="p-access__information-box">
+              <p class="p-access__name">ASSIST DENTAL CLINIC</p>
+              <p class="p-access__tel">
+                TEL.<span class="p-access__tel-number">03-0000-0000</span>
+              </p>
+              <p class="p-access__address">〒111-1111 東京都渋谷区青山1-1-1</p>
+              <p class="p-access__time">営業時間 10:00〜19:00</p>
+              <p class="p-access__close">定休日 木・土曜午後／土日祝日</p>
+            </div>
+            <div class="p-access__schedule-box">
+              <table class="p-access__schedule">
+                <tbody>
+                  <tr>
+                    <th class="p-access__schedule-title"></th>
+                    <th class="p-access__schedule-title">月</th>
+                    <th class="p-access__schedule-title">火</th>
+                    <th class="p-access__schedule-title">水</th>
+                    <th class="p-access__schedule-title">木</th>
+                    <th class="p-access__schedule-title">金</th>
+                    <th class="p-access__schedule-title">土</th>
+                    <th
+                      class="p-access__schedule-title p-access__schedule-title-sun"
+                    >
+                      日・祝
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="p-access__schedule-text p-access__schedule-hour">
+                      午前診察
+                    </td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">×</td>
+                  </tr>
+                  <tr>
+                    <td class="p-access__schedule-text p-access__schedule-hour">
+                      午後診察
+                    </td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">×</td>
+                    <td class="p-access__schedule-text">○</td>
+                    <td class="p-access__schedule-text">×</td>
+                    <td class="p-access__schedule-text">×</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="p-access__button">
+            <a class="c-button c-button--purple" href="./reservation.html"
+              ><span class="c-button__inner">WEB予約はこちら</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター-------------------------------------------------------------- -->
+    <footer class="p-footer">
+      <div class="p-wrapper">
+        <div class="p-footer__head">
+          <p class="p-footer__logo">ASSIST DENTAL CLINIC</p>
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-list">
+              <li class="p-footer__nav-item"><a href="#p-news">新着情報</a></li>
+              <li class="p-footer__nav-item">
+                <a href="#p-treatment">診察内容</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#p-flow">治療の流れ</a>
+              </li>
+              <li class="p-footer__nav-item p-footer__nav-no-border">
+                <a href="/about.html">当院について</a>
+                <ul class="p-footer__sub-list">
+                  <li class="p-footer__sub-item">
+                    <a href="/about.html#p-about">院長挨拶</a>
+                  </li>
+                  <li class="p-footer__sub-item">
+                    <a href="/about.html#p-facility">設備紹介</a>
+                  </li>
+                  <li class="p-footer__sub-item">
+                    <a href="/about.html#p-company">会社概要</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="#">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="p-footer__bottom">
+          <small>&copy;2024 ASSIST DENTAL CLINIC All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
