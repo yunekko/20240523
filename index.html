@@ -39,22 +39,11 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <!-- Animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </head>
   <body>
     <header class="p-header">
@@ -100,9 +89,11 @@
             </li>
             <li class="p-header__nav-item"><a href="#flow">治療の流れ</a></li>
             <li
-              class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover"
+              class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover js-accordion-title"
             >
-              <a href="/about.html">当院について</a>
+              <a class="p-header__nav-hover-colored" href="/about.html">
+                当院について
+              </a>
               <ul class="p-header__sub-list">
                 <li class="p-header__sub-item">
                   <a href="/about.html#about">院長挨拶</a>
@@ -151,7 +142,7 @@
 
       <!-- メインビュー--------------------------------- -->
       <div class="p-main-catch">
-        <div class="p-main-catch__image animate__animated js-fadein-right">
+        <div class="p-main-catch__image fade-in fade-in-right">
           <picture>
             <source
               srcset="./images/main-view-pc.jpg"
@@ -161,7 +152,7 @@
           </picture>
         </div>
         <div class="p-main-catch__wrapper">
-          <div class="p-main-catch__container animate__animated js-fadein-left">
+          <div class="p-main-catch__container fade-in fade-in-left">
             <p class="p-main-catch__top">Make your life quality</p>
             <div class="p-main-catch__box">
               <p class="p-main-catch__text">口腔環境からはじめる</p>
@@ -179,11 +170,9 @@
         <div class="p-news__wrapper">
           <div class="p-news__box">
             <div class="p-news__section-box">
-              <h2 class="c-section-title animate__animated js-fadein-up">
-                新着情報
-              </h2>
+              <h2 class="c-section-title fade-in fade-in-up">新着情報</h2>
               <p
-                class="c-section-subtitle p-news__sub-title animate__animated js-fadein-up"
+                class="c-section-subtitle p-news__sub-title fade-in fade-in-up"
               >
                 News
               </p>
@@ -244,29 +233,23 @@
       <section class="p-about-top l-about-top">
         <div class="p-about-top__wrapper">
           <div class="p-about-top__box">
-            <div
-              class="p-about-top__image-box animate__animated js-fadein-left"
-            >
-              <div class="p-about-top__image1">
+            <div class="p-about-top__image-box">
+              <div class="p-about-top__image1 fade-in fade-in-left">
                 <img
                   src="./images/about1.jpg"
                   alt="女の子が口を開けている写真"
                 />
               </div>
-              <div
-                class="p-about-top__image2 animate__animated js-fadein-right"
-              >
+              <div class="p-about-top__image2 fade-in fade-in-right">
                 <img src="./images/about2.jpg" alt="歯医者の椅子" />
               </div>
             </div>
             <div class="p-about-top__text-box">
-              <h2
-                class="c-section-title p-about-top__title animate__animated js-fadein-up"
-              >
+              <h2 class="c-section-title p-about-top__title fade-in fade-in-up">
                 わたしたちについて
               </h2>
               <p
-                class="c-section-subtitle p-about-top__sub-title animate__animated js-fadein-up"
+                class="c-section-subtitle p-about-top__sub-title fade-in fade-in-up"
               >
                 About us
               </p>
@@ -291,13 +274,11 @@
         <div class="c-bg-mask2 c-bg-mask__treatment"></div>
 
         <div class="p-treatment__wrapper">
-          <h2
-            class="c-section-title p-treatment__title animate__animated js-fadein-up"
-          >
+          <h2 class="c-section-title p-treatment__title fade-in fade-in-up">
             診療内容
           </h2>
           <p
-            class="c-section-subtitle p-treatment__sub-title animate__animated js-fadein-up"
+            class="c-section-subtitle p-treatment__sub-title fade-in fade-in-up"
           >
             Treatment details
           </p>
@@ -312,16 +293,20 @@
                 /></picture>
               </div>
               <div class="c-card__body p-treatment__card-body">
-                <h3 class="c-card__title p-treatment__card-title">
+                <h3
+                  class="c-card__title p-treatment__card-title p-treatment__card-title1"
+                >
                   虫歯治療・予防歯科
                 </h3>
                 <p class="c-card__text p-treatment__card-text">
                   ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
                 </p>
               </div>
-              <a class="c-button-more p-treatment__button" href="#"
-                >もっと見る<span class="c-button-more__inner"></span
-              ></a>
+              <div class="p-treatment__button">
+                <a class="c-button-more" href="#"
+                  >もっと見る<span class="c-button-more__inner"></span
+                ></a>
+              </div>
             </div>
             <div class="c-card p-treatment__card">
               <div class="c-card__image p-treatment__card-image">
@@ -340,9 +325,11 @@
                   ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
                 </p>
               </div>
-              <a class="c-button-more p-treatment__button" href="#"
-                >もっと見る<span class="c-button-more__inner"></span
-              ></a>
+              <div class="p-treatment__button">
+                <a class="c-button-more" href="#"
+                  >もっと見る<span class="c-button-more__inner"></span
+                ></a>
+              </div>
             </div>
             <div class="c-card p-treatment__card">
               <div class="c-card__image p-treatment__card-image">
@@ -361,9 +348,11 @@
                   ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
                 </p>
               </div>
-              <a class="c-button-more p-treatment__button" href="#"
-                >もっと見る<span class="c-button-more__inner"></span
-              ></a>
+              <div class="p-treatment__button">
+                <a class="c-button-more" href="#"
+                  >もっと見る<span class="c-button-more__inner"></span
+                ></a>
+              </div>
             </div>
             <div class="c-card p-treatment__card">
               <div class="c-card__image p-treatment__card-image">
@@ -377,16 +366,20 @@
                 /></picture>
               </div>
               <div class="c-card__body p-treatment__card-body">
-                <h3 class="c-card__title p-treatment__card-title">
+                <h3
+                  class="c-card__title p-treatment__card-title p-treatment__card-title4"
+                >
                   ホワイトニング
                 </h3>
                 <p class="c-card__text p-treatment__card-text">
                   ここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入るここにテキスト入る
                 </p>
               </div>
-              <a class="c-button-more p-treatment__button" href="#"
-                >もっと見る<span class="c-button-more__inner"></span
-              ></a>
+              <div class="p-treatment__button">
+                <a class="c-button-more" href="#"
+                  >もっと見る<span class="c-button-more__inner"></span
+                ></a>
+              </div>
             </div>
           </div>
           <div class="p-treatment__button-box">
@@ -402,13 +395,11 @@
         <div class="p-flow__wrapper">
           <div class="p-flow__container">
             <div class="p-flow__title-box">
-              <h2
-                class="c-section-title p-flow__title animate__animated js-fadein-up"
-              >
+              <h2 class="c-section-title p-flow__title fade-in fade-in-up">
                 治療の流れ
               </h2>
               <p
-                class="c-section-subtitle p-flow__sub-title animate__animated js-fadein-up"
+                class="c-section-subtitle p-flow__sub-title fade-in fade-in-up"
               >
                 Flow
               </p>
@@ -464,17 +455,15 @@
         <div class="c-bg-mask2 c-bg-mask__message"></div>
         <div class="p-message__wrapper">
           <div class="p-message__container">
-            <h2
-              class="c-section-title p-message__title-sp animate__animated js-fadein-up"
-            >
+            <h2 class="c-section-title p-message__title-sp fade-in fade-in-up">
               院長ご挨拶
             </h2>
             <p
-              class="c-section-subtitle p-message__sub-title-sp animate__animated js-fadein-up"
+              class="c-section-subtitle p-message__sub-title-sp fade-in fade-in-up"
             >
               Message
             </p>
-            <div class="p-message__image animate__animated js-fadein-left">
+            <div class="p-message__image fade-in fade-in-left">
               <picture>
                 <source
                   srcset="./images/message-pc.jpg"
@@ -484,12 +473,12 @@
             </div>
             <div class="p-message__box">
               <h2
-                class="c-section-title p-message__title-pc animate__animated js-fadein-up"
+                class="c-section-title p-message__title-pc fade-in fade-in-up"
               >
                 院長ご挨拶
               </h2>
               <p
-                class="c-section-subtitle p-message__sub-title-pc animate__animated js-fadein-up"
+                class="c-section-subtitle p-message__sub-title-pc fade-in fade-in-up"
               >
                 Message
               </p>
@@ -515,9 +504,7 @@
               /></picture>
             </div>
             <div class="c-card__body p-point__card-body">
-              <div
-                class="c-card__head p-point__card-head animate__animated js-fadein-up"
-              >
+              <div class="c-card__head p-point__card-head fade-in fade-in-up">
                 <p class="c-card__sub-title p-point__card-sub-title">
                   Point 01
                 </p>
@@ -543,9 +530,7 @@
               /></picture>
             </div>
             <div class="c-card__body p-point__card-body">
-              <div
-                class="c-card__head p-point__card-head animate__animated js-fadein-up"
-              >
+              <div class="c-card__head p-point__card-head fade-in fade-in-up">
                 <p class="c-card__sub-title p-point__card-sub-title">
                   Point 02
                 </p>
@@ -569,9 +554,7 @@
               /></picture>
             </div>
             <div class="c-card__body p-point__card-body">
-              <div
-                class="c-card__head p-point__card-head animate__animated js-fadein-up"
-              >
+              <div class="c-card__head p-point__card-head fade-in fade-in-up">
                 <p class="c-card__sub-title p-point__card-sub-title">
                   Point 03
                 </p>
@@ -589,14 +572,10 @@
       </section>
       <!-- スワイパー -------------------------------------------------->
       <section class="p-interior l-interior">
-        <h2
-          class="c-section-title p-interior__title animate__animated js-fadein-up"
-        >
+        <h2 class="c-section-title p-interior__title fade-in fade-in-up">
           院内風景
         </h2>
-        <p
-          class="c-section-subtitle p-interior__sub-title animate__animated js-fadein-up"
-        >
+        <p class="c-section-subtitle p-interior__sub-title fade-in fade-in-up">
           Dental clinic interior
         </p>
 
@@ -605,7 +584,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide p-swiper__slide">
+            <div class="swiper-slide">
               <div class="p-swiper__image">
                 <img src="./images/interior1.jpg" alt="歯の模型" />
               </div>
@@ -644,7 +623,7 @@
               </div>
             </div>
           </div>
-          <!-- If we need navigation buttons -->
+          <!-- navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -655,14 +634,10 @@
         <div class="c-bg-mask1 c-bg-mask__bottom"></div>
 
         <div class="p-access__wrapper">
-          <h2
-            class="c-section-title p-access__title animate__animated js-fadein-up"
-          >
+          <h2 class="c-section-title p-access__title fade-in fade-in-up">
             アクセス
           </h2>
-          <p
-            class="c-section-subtitle p-access__sub-title animate__animated js-fadein-up"
-          >
+          <p class="c-section-subtitle p-access__sub-title fade-in fade-in-up">
             Access
           </p>
           <iframe
@@ -674,6 +649,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+
           <div class="p-access__box">
             <div class="p-access__information-box">
               <p class="p-access__logo">ASSIST DENTAL CLINIC</p>

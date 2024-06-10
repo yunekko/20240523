@@ -45,10 +45,24 @@ jQuery(function ($) {
     $(".js-drawer").fadeToggle();
   });
   if (window.matchMedia("(max-width: 768px)").matches) {
-    $(".p-header__nav-item a").click(function () {
+    $(".p-header__logo, .p-header__nav-item a").click(function () {
       $(".c-hamburger-button").removeClass("is-active");
       $("body").removeClass("active");
       $(".js-drawer").fadeOut();
+    });
+  }
+
+  // アコーディオンメニュー
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    $(function () {
+      $(".js-accordion-title").on("click", function () {
+        $(".p-header__sub-list").slideToggle(200);
+        $(this).toggleClass("open", 200);
+      });
+      $(".p-header__sub-item a").on("click", function () {
+        $(".p-header__sub-list").slideUp();
+        $(".p-header__nav-arrow").removeClass("open");
+      });
     });
   }
 
@@ -64,57 +78,20 @@ jQuery(function ($) {
       }
     });
   }
+});
 
-  // フェードイン
-  $(".js-fadein-left").waypoint({
-    handler: function (direction) {
-      // 要素が画面中央に来るとここが実行される
-      if (direction === "down") {
-        /**
-         * 下方向のスクロール
-         * イベント発生元の要素に
-         * fadeInLeftアニメーションを付けることで
-         * アニメーションを開始
-         */
-        $(this.element).addClass("animate__fadeInLeft");
+// フェードイン別バージョン
+jQuery(function ($) {
+  var fadeIn = $(".fade-in");
+  $(window).scroll(function () {
+    $(fadeIn).each(function () {
+      var offset = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > offset - windowHeight + 150) {
+        $(this).addClass("scroll-in");
       }
-    },
-    // 要素が画面中央に来たらhandlerを実行
-    offset: "50%",
-  });
-
-  $(".js-fadein-right").waypoint({
-    handler: function (direction) {
-      // 要素が画面中央に来るとここが実行される
-      if (direction === "down") {
-        /**
-         * 下方向のスクロール
-         * イベント発生元の要素に
-         * fadeInLeftアニメーションを付けることで
-         * アニメーションを開始
-         */
-        $(this.element).addClass("animate__fadeInRight");
-      }
-    },
-    // 要素が画面中央に来たらhandlerを実行
-    offset: "50%",
-  });
-
-  $(".js-fadein-up").waypoint({
-    handler: function (direction) {
-      // 要素が画面中央に来るとここが実行される
-      if (direction === "down") {
-        /**
-         * 下方向のスクロール
-         * イベント発生元の要素に
-         * fadeInLeftアニメーションを付けることで
-         * アニメーションを開始
-         */
-        $(this.element).addClass("animate__fadeInUp");
-      }
-    },
-    // 要素が画面中央に来たらhandlerを実行
-    offset: "50%",
+    });
   });
 });
 
@@ -136,18 +113,23 @@ const mySwiper = new Swiper(".swiper", {
 
   breakpoints: {
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2.3,
       spaceBetween: 10,
+    },
+
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
     },
 
     1400: {
       slidesPerView: 3.5,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
 
-    1920: {
-      slidesPerView: 4.5,
-      spaceBetween: 10, //スライド感の余白
+    1700: {
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 });

@@ -40,23 +40,12 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <!-- Animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script defer src="./js/script.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </head>
   <body>
     <header class="p-header">
@@ -108,9 +97,14 @@
               <a href="/index.html#flow">治療の流れ</a>
             </li>
             <li
-              class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover"
+              class="p-header__nav-item p-header__nav-noborder p-header__nav-arrow p-header__nav-hover js-accordion-title"
             >
-              <a class="js-accordion-title" href="/about.html">当院について</a>
+              <a
+                class="p-header__nav-hover-colored js-accordion-title"
+                href="/about.html"
+              >
+                当院について
+              </a>
               <ul class="p-header__sub-list">
                 <li class="p-header__sub-item">
                   <a href="./about.html#about">院長挨拶</a>
@@ -208,7 +202,9 @@
                       name="gender"
                       value="男性"
                       required
-                    /><label for="man">男性</label>
+                    /><label class="p-reservation__radio-label" for="man"
+                      >男性</label
+                    >
                   </div>
                   <div class="p-reservation__answer-item">
                     <input
@@ -217,7 +213,9 @@
                       type="radio"
                       name="gender"
                       value="女性"
-                    /><label for="woman">女性</label>
+                    /><label class="p-reservation__radio-label" for="woman"
+                      >女性</label
+                    >
                   </div>
                   <div class="p-reservation__answer-item">
                     <input
@@ -226,7 +224,9 @@
                       type="radio"
                       name="gender"
                       value="その他"
-                    /><label for="other">その他</label>
+                    /><label class="p-reservation__radio-label" for="other"
+                      >その他</label
+                    >
                   </div>
                 </div>
               </div>
@@ -239,7 +239,7 @@
                 <input
                   class="p-reservation__answer"
                   id="birthday"
-                  type="number"
+                  type="text"
                   name="birthday"
                   placeholder="例）19800101"
                   required
@@ -261,7 +261,11 @@
                       name="consultation"
                       value="初めて"
                       required
-                    /><label for="first">初めて</label>
+                    /><label
+                      class="p-reservation__radio-consultation-label"
+                      for="first"
+                      >初めて</label
+                    >
                   </div>
                   <div class="p-reservation__answer-item">
                     <input
@@ -270,7 +274,11 @@
                       type="radio"
                       name="consultation"
                       value="2回目以降"
-                    /><label for="more">2回目以降</label>
+                    /><label
+                      class="p-reservation__radio-consultation-label"
+                      for="more"
+                      >2回目以降</label
+                    >
                   </div>
                 </div>
               </div>
@@ -382,7 +390,7 @@
                 <label class="p-reservation__label" for="textarea-item"
                   ><span
                     class="p-reservation__required p-reservation__required-gray"
-                    >必須</span
+                    >任意</span
                   >担当医へのメッセージ</label
                 >
                 <p
@@ -395,7 +403,6 @@
                   class="p-reservation__answer p-reservation__answer-message"
                   name="textarea-item"
                   id="textarea-item"
-                  required
                 ></textarea>
               </div>
               <!-- 同意チェック -->
@@ -409,7 +416,7 @@
                   required
                 /><label class="p-reservation__confirm-label" for="confirm"
                   ><span class="p-reservation__confirm-underline"
-                    >個人情報保護方針</span
+                    ><a href="#" target="_blank">個人情報保護方針</a></span
                   >に同意のうえ、ご送信ください。</label
                 >
               </div>
