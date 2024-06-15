@@ -38,7 +38,7 @@ jQuery(function ($) {
   });
 
   // ハンバーガーメニュー;
-  $(".c-hamburger-button").click(function () {
+  $(".p-header__hamburger").click(function () {
     $(this).toggleClass("is-active");
     // bodyに「.active」class付け外し
     $("body").toggleClass("active");
@@ -46,7 +46,7 @@ jQuery(function ($) {
   });
   if (window.matchMedia("(max-width: 768px)").matches) {
     $(".p-header__logo, .p-header__nav-item a").click(function () {
-      $(".c-hamburger-button").removeClass("is-active");
+      $(".p-header__hamburger").removeClass("is-active");
       $("body").removeClass("active");
       $(".js-drawer").fadeOut();
     });
@@ -56,11 +56,11 @@ jQuery(function ($) {
   if (window.matchMedia("(max-width: 768px)").matches) {
     $(function () {
       $(".js-accordion-title").on("click", function () {
-        $(".p-header__sub-list").slideToggle(200);
-        $(this).toggleClass("open", 200);
+        $(".p-header__dropMenu").slideToggle(400);
+        $(this).toggleClass("open", 400);
       });
-      $(".p-header__sub-item a").on("click", function () {
-        $(".p-header__sub-list").slideUp();
+      $(".p-header__dropMenu a").on("click", function () {
+        $(".p-header__dropMenu").slideUp();
         $(".p-header__nav-arrow").removeClass("open");
       });
     });
@@ -80,7 +80,11 @@ jQuery(function ($) {
   }
 });
 
-// フェードイン別バージョン
+// フェードイン
+$(document).ready(function () {
+  $(".fade-in-ready").addClass("scroll-in");
+});
+
 jQuery(function ($) {
   var fadeIn = $(".fade-in");
   $(window).scroll(function () {
@@ -113,23 +117,23 @@ const mySwiper = new Swiper(".swiper", {
 
   breakpoints: {
     768: {
-      slidesPerView: 2.3,
-      spaceBetween: 10,
-    },
-
-    1024: {
       slidesPerView: 2.5,
       spaceBetween: 20,
     },
 
-    1400: {
-      slidesPerView: 3.5,
-      spaceBetween: 20,
-    },
+    // 1024: {
+    //   slidesPerView: 2.5,
+    //   spaceBetween: 20,
+    // },
 
-    1700: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
+    // 1400: {
+    //   slidesPerView: 3.5,
+    //   spaceBetween: 20,
+    // },
+
+    // 1700: {
+    //   slidesPerView: 4,
+    //   spaceBetween: 20,
+    // },
   },
 });
